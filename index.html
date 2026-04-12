@@ -4,9 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Ajith Raj K S — AI/ML Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -24,7 +22,7 @@
   --accent-dim: rgba(108,71,255,0.08);
   --accent-mid: rgba(108,71,255,0.15);
   --green: #22c55e;
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -347,8 +345,8 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
 <div id="hero">
   <div class="hero-status fade"><span class="status-dot"></span>Open to AI/ML roles & research collaborations</div>
   <h1 class="hero-name fade" style="transition-delay:.06s">Ajith Raj K S —<br><span class="accent-word">AI/ML Engineer</span></h1>
-  <p class="hero-role fade" style="transition-delay:.12s"><strong>Research Intern · IISc Bengaluru</strong> · Open Source Contributor</p>
-  <p class="hero-bio fade" style="transition-delay:.18s">I build intelligent systems at the intersection of machine learning, natural language processing, and applied research. Currently contributing to interactive game systems and ML pipelines at IISc, while actively engaging with the open source community.</p>
+  <p class="hero-role fade" style="transition-delay:.12s"><strong>Research Intern · IISc Bengaluru</strong> · GSoC 2026 Contributor</p>
+  <p class="hero-bio fade" style="transition-delay:.18s">I build intelligent systems at the intersection of machine learning, applied research, and production engineering. Currently at IISc CPDM Lab working on DRDO-commissioned simulation systems, while actively contributing to open source as a GSoC 2026 applicant.</p>
   <div class="hero-actions fade" style="transition-delay:.24s">
     <a class="btn btn-primary" href="#projects">View projects</a>
     <a class="btn btn-secondary" href="https://github.com/ajithhraj" target="_blank">
@@ -375,13 +373,27 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
       <div class="exp-where">IISc · Bengaluru</div>
     </div>
     <div>
-      <div class="exp-title">Research Intern — Game Developer</div>
-      <p class="exp-body">Working within a multidisciplinary research team at the Centre for Product Design & Manufacturing, contributing to an interactive serious game built for defence research applications.</p>
+      <div class="exp-title">Software Engineer, Research Intern</div>
+      <p class="exp-body">Working within a multidisciplinary research team at the Centre for Product Design & Manufacturing, building Stratacon — a DRDO-commissioned serious game. Serving as pipeline engineer, technical artist, animations lead, and cinematics lead.</p>
       <div class="exp-highlights">
         <div class="exp-highlight">Designed and maintained asset pipelines, ensuring efficient delivery of 3D content across the development workflow</div>
         <div class="exp-highlight">Led technical art, character animations, and in-engine cinematics from concept through final integration</div>
         <div class="exp-highlight">Collaborated with researchers and engineers to align game mechanics with research objectives</div>
         <div class="exp-highlight">Contributed to tooling and automation for the game's content production pipeline</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="exp-row fade" style="transition-delay:.07s">
+    <div>
+      <div class="exp-when">2024</div>
+      <div class="exp-where">Rooman Technologies</div>
+    </div>
+    <div>
+      <div class="exp-title">Software Development Intern</div>
+      <p class="exp-body">Built full-stack features across web and mobile platforms, working across the development lifecycle from backend REST APIs to frontend integration.</p>
+      <div class="exp-highlights">
+        <div class="exp-highlight">Developed full-stack features using REST APIs, Java, and JavaScript across web and mobile platforms</div>
       </div>
     </div>
   </div>
@@ -418,6 +430,35 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
         <a class="gh-link" href="https://github.com/ajithhraj" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
           View profile
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ML Projects -->
+  <div class="proj-section-label fade">Featured projects</div>
+  <div class="proj-grid">
+    <div class="proj-card fade">
+      <div class="proj-idx">RAG · Production</div>
+      <div class="proj-name">Multimodal RAG System</div>
+      <p class="proj-desc">Production-style RAG pipeline ingesting PDFs, images, and tabular data with hybrid dense + BM25 retrieval, RRF fusion, cross-encoder reranking, and citation-rich answers. Ships with FastAPI service, CLI, and Docker support.</p>
+      <div class="proj-footer">
+        <div class="proj-tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">Qdrant</span><span class="tag">Docker</span></div>
+        <a class="gh-link" href="https://github.com/ajithhraj" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="proj-card fade" style="transition-delay:.07s">
+      <div class="proj-idx">From Scratch</div>
+      <div class="proj-name">Neural Network from Scratch</div>
+      <p class="proj-desc">Fully connected neural network built from first principles — forward pass, backpropagation, and gradient descent — with zero ML frameworks. Demonstrates deep mathematical understanding of modern neural architectures.</p>
+      <div class="proj-footer">
+        <div class="proj-tags"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Backpropagation</span></div>
+        <a class="gh-link" href="https://github.com/ajithhraj" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
         </a>
       </div>
     </div>
@@ -500,13 +541,12 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
 <section class="c" id="skills">
   <div class="eyebrow fade">Skills</div>
   <h2 class="sec-h fade">What I work with</h2>
-  <div class="skill-row fade"><div class="skill-cat">AI / ML</div><div class="skill-pills"><span class="skill-pill">Machine Learning</span><span class="skill-pill">Deep Learning</span><span class="skill-pill">NLP</span><span class="skill-pill">Computer Vision</span><span class="skill-pill">Generative AI</span><span class="skill-pill">LLMs</span><span class="skill-pill">RAG</span><span class="skill-pill">Agentic AI</span><span class="skill-pill">Reinforcement Learning</span><span class="skill-pill">Scikit-learn</span><span class="skill-pill">TensorFlow</span><span class="skill-pill">OpenCV</span></div></div>
+  <div class="skill-row fade"><div class="skill-cat">AI / ML</div><div class="skill-pills"><span class="skill-pill">Machine Learning</span><span class="skill-pill">Deep Learning</span><span class="skill-pill">NLP</span><span class="skill-pill">Computer Vision</span><span class="skill-pill">Generative AI</span><span class="skill-pill">LLMs</span><span class="skill-pill">RAG</span><span class="skill-pill">Agentic AI</span><span class="skill-pill">Reinforcement Learning</span></div></div>
+  <div class="skill-row fade"><div class="skill-cat">Libraries</div><div class="skill-pills"><span class="skill-pill">TensorFlow</span><span class="skill-pill">Scikit-learn</span><span class="skill-pill">OpenCV</span><span class="skill-pill">LangChain</span><span class="skill-pill">NumPy</span><span class="skill-pill">Pandas</span><span class="skill-pill">Matplotlib</span><span class="skill-pill">FAISS</span><span class="skill-pill">Apache Spark</span></div></div>
   <div class="skill-row fade"><div class="skill-cat">Programming</div><div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">Java</span><span class="skill-pill">SQL</span><span class="skill-pill">JavaScript</span><span class="skill-pill">HTML / CSS</span></div></div>
-  <div class="skill-row fade"><div class="skill-cat">Data & Analytics</div><div class="skill-pills"><span class="skill-pill">Pandas</span><span class="skill-pill">NumPy</span><span class="skill-pill">Matplotlib</span><span class="skill-pill">Data Mining</span><span class="skill-pill">Association Rules</span><span class="skill-pill">Weka</span><span class="skill-pill">Apache Spark</span></div></div>
-  <div class="skill-row fade"><div class="skill-cat">Tools & Infra</div><div class="skill-pills"><span class="skill-pill">Git</span><span class="skill-pill">REST APIs</span><span class="skill-pill">Streamlit</span><span class="skill-pill">Spring</span><span class="skill-pill">VS Code</span><span class="skill-pill">PyCharm</span><span class="skill-pill">Android Studio</span><span class="skill-pill">RPA</span></div></div>
-  <div class="skill-row fade"><div class="skill-cat">Databases</div><div class="skill-pills"><span class="skill-pill">MySQL</span><span class="skill-pill">SQL Server</span></div></div>
-  <div class="skill-row fade"><div class="skill-cat">Creative & Game</div><div class="skill-pills"><span class="skill-pill">Pipeline Engineering</span><span class="skill-pill">Technical Art</span><span class="skill-pill">Cinematics</span><span class="skill-pill">3D Animation</span><span class="skill-pill">Premiere Pro</span><span class="skill-pill">After Effects</span><span class="skill-pill">Photoshop</span><span class="skill-pill">Lightroom</span></div></div>
-  <div class="skill-row fade"><div class="skill-cat">Systems</div><div class="skill-pills"><span class="skill-pill">Windows</span><span class="skill-pill">Linux</span><span class="skill-pill">OOP</span></div></div>
+  <div class="skill-row fade"><div class="skill-cat">Backend & Infra</div><div class="skill-pills"><span class="skill-pill">FastAPI</span><span class="skill-pill">REST APIs</span><span class="skill-pill">Docker</span><span class="skill-pill">Spring</span><span class="skill-pill">Git</span></div></div>
+  <div class="skill-row fade"><div class="skill-cat">Databases</div><div class="skill-pills"><span class="skill-pill">MySQL</span><span class="skill-pill">SQL Server</span><span class="skill-pill">Qdrant</span><span class="skill-pill">Vector Databases</span></div></div>
+  <div class="skill-row fade"><div class="skill-cat">Creative & Game</div><div class="skill-pills"><span class="skill-pill">Pipeline Engineering</span><span class="skill-pill">Technical Art</span><span class="skill-pill">Cinematics</span><span class="skill-pill">3D Animation</span><span class="skill-pill">Premiere Pro</span><span class="skill-pill">After Effects</span><span class="skill-pill">Photoshop</span></div></div>
 </section>
 
 <hr/>
@@ -526,7 +566,7 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
       <div class="fact-row"><span class="fact-label">Location</span><span class="fact-val">Bengaluru, India</span></div>
       <div class="fact-row"><span class="fact-label">Currently at</span><span class="fact-val">IISc CPDM Lab</span></div>
       <div class="fact-row"><span class="fact-label">Open source</span><span class="fact-val">C2SI · GSoC 2026</span></div>
-      <div class="fact-row"><span class="fact-label">Email</span><span class="fact-val">ajithrxj@gmail.com</span></div>
+      <div class="fact-row"><span class="fact-label">Email</span><span class="fact-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="492823203d213b3123092e24282025672a2624">[email&#160;protected]</a></span></div>
       <div class="fact-row"><span class="fact-label">GitHub</span><span class="fact-val">github.com/ajithhraj</span></div>
       <div class="fact-row"><span class="fact-label">Languages</span><span class="fact-val">English, ಕನ್ನಡ, తెలుగు, हिंदी</span></div>
       <div class="edu-block">
@@ -545,9 +585,9 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
   <h2 class="contact-h fade">Let's work together</h2>
   <p class="contact-sub fade">Open to AI/ML roles, research collaborations, and interesting projects. I reply fast.</p>
   <div class="contact-links fade">
-    <a class="contact-chip" href="mailto:ajithrxj@gmail.com">
+    <a class="contact-chip" href="/cdn-cgi/l/email-protection#20414a49544852584a60474d41494c0e434f4d">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-      ajithrxj@gmail.com
+      <span class="__cf_email__" data-cfemail="96f7fcffe2fee4eefcd6f1fbf7fffab8f5f9fb">[email&#160;protected]</span>
     </a>
     <a class="contact-chip" href="https://linkedin.com/in/ajithhraj" target="_blank">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -569,7 +609,7 @@ footer { border-top: 1px solid var(--border-light); padding: 24px 52px; display:
   <span class="footer-t">Made with <span class="footer-accent">♥</span> · Bengaluru 2026</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const cursor = document.getElementById('cursor');
 const glow = document.getElementById('cursor-glow');
 let mx = 0, my = 0, gx = 0, gy = 0;
@@ -630,13 +670,11 @@ SKILLS
 AI/ML: Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, LLMs, RAG, Agentic AI, Reinforcement Learning
 Libraries: Scikit-learn, TensorFlow, OpenCV, Pandas, NumPy, Matplotlib
 Programming: Python, Java, SQL, JavaScript, HTML/CSS
-Tools: Git, REST APIs, Streamlit, Spring, VS Code, Apache Spark
-Databases: MySQL, SQL Server
-Creative: Pipeline Engineering, Technical Art, Cinematics, Animation, Premiere Pro, After Effects`;
+Tools: Git, REST APIs, Streamlit, Spring, VS Code`;
   const blob = new Blob([txt], { type: 'text/plain' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'Ajith_Raj_KS_Resume.txt';
+  a.download = 'ajith_raj_resume.txt';
   a.click();
 }
 </script>
