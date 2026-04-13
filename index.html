@@ -23,6 +23,7 @@
   --accent-mid: rgba(108,71,255,0.15);
   --green: #22c55e;
   --font: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -155,7 +156,7 @@ section.c { padding: 88px 52px; max-width: 880px; margin: 0 auto; position: rela
   display: flex; align-items: center; gap: 8px;
 }
 .eyebrow::before { content: ''; width: 18px; height: 1.5px; background: var(--accent); border-radius: 2px; }
-.sec-h { font-size: clamp(26px,3.8vw,38px); font-weight: 600; letter-spacing: -0.025em; margin-bottom: 52px; line-height: 1.12; }
+.sec-h { font-size: clamp(26px,3.8vw,38px); font-weight: 400; font-family: var(--font-serif); font-style: italic; letter-spacing: -0.01em; margin-bottom: 52px; line-height: 1.12; }
 
 /* EXPERIENCE */
 .exp-row {
